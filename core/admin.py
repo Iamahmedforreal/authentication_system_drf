@@ -7,6 +7,6 @@ from .models import User
 class UserAdmin(BaseUserAdmin):
     list_display = ('phone_number', 'email', 'is_staff', 'is_active', 'date_joined')
     list_filter = ('is_staff', 'is_active')
+    ordering = ['phone_number']
 
 
-    
